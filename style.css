@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header1 nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header1 nav a {
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+.header1 nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(241, 38, 241);
+    transition: width 0.4s ease-in-out;
+}
+
+.header1 nav a:hover::after {
+    width: 100%;
+}
+
+.banner {
+    min-height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.left h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+.left h3 span {
+    color: rgb(241, 38, 241);
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.left p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.right {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img{
+    background-color: red;
+    width: 400px;
+    border-radius: 100%;
+    border: 2px rgba(241, 71, 241, 0.63) solid;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.right img:hover {
+    transform: scale(1.05);
+}
+
+.about-section {
+    background-color: #111;
+    color: white;
+}
+
+.about-section .highlight {
+    color: rgb(241, 38, 241);
+    font-weight: bold;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(241, 38, 241);
+    transition: width 0.4s ease-in-out;
+}
+
+.about-section h2:hover::after {
+    width: 100%;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.abt {
+    text-align: center
+}
+
+
+.skills-section {
+    background-color: #111;
+    color: white;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(241, 38, 241);
+    transition: width 0.4s ease-in-out;
+}
+
+.underline-hover:hover::after {
+    width: 100%;
+}
+
+.highlight {
+    color: rgb(241, 38, 241);
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.skill-box {
+    padding: 15px;
+}
+
+.skill-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(241, 38, 241, 0.15);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(241, 38, 241, 0.4);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-card h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.skill-card:hover {
+    opacity: 1;
+}
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(241, 38, 241);
+    transition: width 0.4s ease-in-out;
+}
+
+.underline-hover:hover::after {
+    width: 100%;
+}
+
+/* .skill-card .ecom1{
+    display: none;
+} */
+
+
+.left .btn {
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: black;
+    outline: none;
+    border: 1px rgb(241, 38, 241) solid;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.left .btn:hover {
+    background-color: rgb(241, 38, 241);
+}
+
+form{
+    border: 1px rgba(255, 255, 255, 0.167) solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+form .btn{
+    padding: 10px 40px;
+    background-color: black;
+    outline: none;
+    border: 1px rgb(241, 38, 241) solid;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+form .btn:hover {
+    background-color: rgb(241, 38, 241);
+    color: white;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left {
+        padding: 10px;
+    }
+
+    .left h3 {
+        font-size: 24px;
+    }
+
+    .left h3 span {
+        font-size: 28px;
+    }
+
+    .left p {
+        display: block;
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header1 nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .header1 nav a {
+        margin-bottom: 10px;
+    }
+
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-section img {
+        margin-bottom: 20px;
+    }
+
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card h5 {
+        font-size: 16px;
+    }
+
+    .skill-card img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .progress-bar-container {
+        opacity: 1 !important;
+    }
+
+    .ecom {
+        display: none;
+    }
+
+    .contact-section {
+        padding: 20px 10px;
+    }
+
+    .contact-section .form-label,
+    .contact-section .form-control {
+        font-size: 14px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+
+}
